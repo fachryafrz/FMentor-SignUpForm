@@ -13,6 +13,10 @@ module.exports = {
       fontFamily: {
         poppins: ["'Poppins'", "sans-serif"],
       },
+      boxShadow: {
+        "custom-sm": "0px 4px 0px rgba(0, 0, 0, 0.15)",
+        "custom-md": "0px 8px 0px rgba(0, 0, 0, 0.15)",
+      },
     },
   },
   plugins: [],

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  img {
+    pointer-events: none;
+  }
+
+  .input {
+    @apply p-4 w-full rounded-md outline-none border font-bold active:border-accent-blue focus:border-accent-blue;
+  }
+
+  .input-invalid {
+    @apply p-4 w-full rounded-md outline-none border-2 border-primary-red font-bold active:border-primary-red focus:border-primary-red;
+  }
+}

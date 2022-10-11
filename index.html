@@ -14,32 +14,164 @@
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./app.css" />
   </head>
-  <body>
-    Learn to code by watching others See how experienced developers solve
-    problems in real-time. Watching scripted tutorials is great, but
-    understanding how developers think is invaluable. Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password Claim your
-    free trial By clicking the button, you are agreeing to our Terms and
-    Services
+  <body class="bg-primary-red">
+    <!-- Main Contents -->
+    <main
+      class="z-10 min-h-screen flex flex-col md:flex-row gap-8 md:gap-0 md:max-w-6xl md:mx-auto"
+    >
+      <div
+        class="p-4 w-full pt-20 md:pt-0 flex flex-col justify-center gap-4 text-center md:text-left text-white"
+      >
+        <h1
+          class="font-bold text-2xl max-w-xs mx-auto md:max-w-none md:text-4xl lg:text-6xl md:mx-0"
+        >
+          Learn to code by <br />
+          watching others
+        </h1>
+        <p class="max-w-xs mx-auto md:max-w-lg md:mx-0 md:text-lg">
+          See how experienced developers solve problems in real-time. Watiching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="p-4 w-full flex flex-col justify-center gap-6">
+        <div
+          class="p-4 rounded-lg bg-accent-blue text-center text-white w-full max-w-sm mx-auto md:max-w-none shadow-custom-md"
+        >
+          <b>Try it free 7 days</b><br class="md:hidden" />
+          then $20/mo. thereafter
+        </div>
 
-    <footer>
-      <p class="attribution">
+        <form
+          action="#"
+          method="post"
+          class="flex flex-col gap-4 bg-white rounded-lg p-6 md:p-10 max-w-sm mx-auto md:max-w-none md:mx-0"
+        >
+          <div class="flex flex-col items-end">
+            <div class="w-full relative">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="First Name"
+                class="input"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="Input Error"
+                class="error-icon absolute opacity-0 right-6 top-1/2 -translate-y-1/2"
+              />
+            </div>
+            <small
+              class="error-message hidden text-primary-red italic font-medium"
+            ></small>
+          </div>
+          <div class="flex flex-col items-end">
+            <div class="w-full relative">
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Last Name"
+                class="input"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="Input Error"
+                class="error-icon absolute opacity-0 right-6 top-1/2 -translate-y-1/2"
+              />
+            </div>
+            <small
+              class="error-message hidden text-primary-red italic font-medium"
+            ></small>
+          </div>
+          <div class="flex flex-col items-end">
+            <div class="w-full relative">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                class="input"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="Input Error"
+                class="error-icon absolute opacity-0 right-6 top-1/2 -translate-y-1/2"
+              />
+            </div>
+            <small
+              class="error-message hidden text-primary-red italic font-medium"
+            ></small>
+          </div>
+          <div class="flex flex-col items-end">
+            <div class="w-full relative">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="input"
+              />
+              <img
+                src="./images/icon-error.svg"
+                alt="Input Error"
+                class="error-icon absolute opacity-0 right-6 top-1/2 -translate-y-1/2"
+              />
+            </div>
+            <small
+              class="error-message hidden text-primary-red italic font-medium"
+            ></small>
+          </div>
+          <button
+            type="submit"
+            class="bg-primary-green py-4 text-center rounded-md text-white uppercase font-medium tracking-widest shadow-custom-sm hover:opacity-50 focus:opacity-50 outline-none shadow-emerald-600"
+          >
+            Claim your free trial
+          </button>
+          <p class="text-neutral-grayish-blue text-sm font-medium text-center">
+            By clicking the button, you are agreeing to out
+            <a href="#" class="text-primary-red font-bold"
+              >Terms and Services</a
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <!-- Credits -->
+    <footer class="md:absolute md:inset-x-0 md:bottom-0">
+      <p class="text-center text-white font-bold">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="text-accent-blue"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/fachryafrz"
+          target="_blank"
+          class="text-accent-blue"
+          >fachryafrz</a
+        >.
       </p>
     </footer>
+
+    <!-- Background Image -->
+    <img
+      src="./images/bg-intro-mobile.png"
+      alt="Learn to Code"
+      class="absolute inset-0 w-full h-full object-cover object-top -z-10 md:hidden"
+    />
+    <img
+      src="./images/bg-intro-desktop.png"
+      alt="Learn to Code"
+      class="absolute inset-0 w-full h-full object-cover object-top -z-10 hidden md:block"
+    />
+
+    <script src="./app.js"></script>
   </body>
 </html>
