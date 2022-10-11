@@ -1,3 +1,7 @@
+.input-invalid {
+  @apply p-4 w-full rounded-md outline-none font-bold border-2 !border-primary-red active:border-primary-red focus:border-primary-red;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,9 +13,5 @@
 
   .input {
     @apply p-4 w-full rounded-md outline-none border font-bold active:border-accent-blue focus:border-accent-blue;
-  }
-
-  .input-invalid {
-    @apply p-4 w-full rounded-md outline-none border-2 border-primary-red font-bold active:border-primary-red focus:border-primary-red;
   }
 }
